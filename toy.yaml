@@ -1,0 +1,7 @@
+dry_mass: 10000 # mass of the rocket without fuel, kg
+fuel_mass: 90000 # mass of the fuel, kg
+isp: 200 # specific impulse of the fule, s
+g: -9.8 # gravitational acceleration at earth surface, ms^-2
+fuel_density: 0.8 # density of fuel, kg/l
+fuel_consumption: 2000 # comsuption of fule by the engine, l/s
+tmax: 50 # maximum simulation time interval, s
