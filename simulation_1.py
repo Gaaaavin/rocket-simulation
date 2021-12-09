@@ -37,11 +37,11 @@ def plot(t, y, acceleration):
     fig.tight_layout()
     # fig.legend()
     # fig.show()
-    fig.savefig("plot.png")
+    fig.savefig("plot_1.png")
 
 
 def main():
-    with open("toy.yaml", 'r') as f:
+    with open("config_1.yaml", 'r') as f:
         config = yaml.load(f, yaml.FullLoader)
 
     y0 = np.array([0, 0, config["dry_mass"]+config["fuel_mass"], 

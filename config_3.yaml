@@ -1,0 +1,18 @@
+dry_mass: 10000 # mass of the rocket without fuel, kg
+fuel_mass: 90000 # mass of the fuel, kg
+isp: 150 # specific impulse of the fule, s
+fuel_density: 0.8 # density of fuel, kg/l
+fuel_consumption: 2000 # comsuption of fule by the engine, l/s
+tmax: 400 # maximum simulation time interval, s
+
+# drag related
+pressure0: 101325 # sea level standard atmospheric pressure, Pa
+temperature0: 288.15 # sea level standard temperature, K
+lapse_rate: 0.0065 # temperature lapse rate, K/m
+gas_cst: 8.31446 # ideal (universal) gas constant, J/(mol·K)
+molar_mass: 0.0289652 # molar mass of dry air, kg/mol
+diameter: 5 # diameter of the rocket body, m
+
+# g related
+g: 9.8 # gravitational acceleration at earth surface, ms^-2
+r_earth: 6378100 # mean radius of the earth, m
