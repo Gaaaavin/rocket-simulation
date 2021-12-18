@@ -22,7 +22,10 @@ def ode(t, y, config):
         air_density = (config["pressure0"] * config["molar_mass"]) / (config["gas_cst"] * config["temperature0"]) * \
             np.power(1 - (config["lapse_rate"] * y[0] / config["temperature0"]), 
             (g * config["molar_mass"]) / (config["gas_cst"] * config["lapse_rate"]) - 1)
-    drag = -air_density * np.linalg.norm(y[1]) * np.pi * config["diameter"] * y[1]
+    if y[1] >= 0:
+        drag = -air_density * np.linalg.norm(y[1]) * np.pi * config["diameter"] * y[1]
+    else:
+        drag = -2 * air_density * np.linalg.norm(y[1]) * np.pi * config["diameter"] * y[1]
     
 
     output[0] = y[1]

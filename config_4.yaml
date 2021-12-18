@@ -18,5 +18,5 @@ g: 9.8 # gravitational acceleration at earth surface, ms^-2
 r_earth: 6378100 # mean radius of the earth, m
 
 # landing related
-t_burn: 235.2 # T+ time to start the landing burn, t
+t_burn: 289.2 # T+ time to start the landing burn, t
 throttle_rate: 0.1 # Teh throttle rate
